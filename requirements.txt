@@ -3,3 +3,5 @@ sentence-transformers==2.2.2
 pinecone-client
 langchain==0.0.225
 flask
+sentence-transformers
+huggingface_hub==0.14.1
