@@ -5,3 +5,9 @@ langchain==0.0.225
 flask
 sentence-transformers
 huggingface_hub==0.14.1
+pypdf
+-e .
+python-dotenv
+langchain-community==0.0.20
+langchain-huggingface==0.0.2
+langchain-pinecone==0.0.3
