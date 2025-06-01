@@ -174,3 +174,5 @@ cython_debug/
 .pypirc
 Model/llama-2-7b-chat.ggmlv3.q4_0.bin
 data/Medical_book.pdf
+Model/
+data/Medical_book.pdf
