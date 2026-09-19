@@ -1,13 +1,75 @@
-ctransformers==0.2.5
-sentence-transformers==2.2.2
-pinecone-client
-langchain==0.0.225
-flask
+# ctransformers==0.2.5
+# sentence-transformers==2.2.2
+# pinecone-client
+# langchain==0.0.225
+# flask
+# sentence-transformers
+# huggingface_hub==0.14.1
+# pypdf
+# -e .
+# python-dotenv
+# langchain-community==0.0.20
+# langchain-huggingface==0.0.2
+# langchain-pinecone==0.0.3
+
+
+# --- Core Framework ---
+flask==3.0.3
+python-dotenv==1.0.1
+
+# --- LangChain & Ecosystem ---
+langchain==0.3.7
+langchain-core>=0.3.29
+langchain-community==0.3.7
+langchain-pinecone==0.2.0
+langchain-huggingface==0.1.0
+langchain-groq==0.2.3
+
+# --- Pinecone ---
+pinecone-client>=5.0.0
+
+# --- Hugging Face & Embeddings ---
 sentence-transformers
-huggingface_hub==0.14.1
-pypdf
--e .
-python-dotenv
-langchain-community==0.0.20
-langchain-huggingface==0.0.2
-langchain-pinecone==0.0.3
+transformers
+tokenizers
+huggingface-hub
+
+# --- LLaMA & GGUF Models ---
+# ctransformers>=0.2.27
+# llama-cpp-python         # Handled in m_fix.bat with pre-built wheels
+torch
+numpy<2.0.0
+
+# --- NLTK (for WordNet and text processing) ---
+nltk==3.9.1
+
+# --- Utility Libraries ---
+certifi
+tqdm
+requests
+regex
+intel-openmp
+mkl
+
+# --- Optional: for thread safety and caching ---
+cachetools
+# packaging==23.2
+# tenacity==8.5.0
+# numpy==1.26.4
+# langsmith
+# langchain-core
+# langchain
+# langchain-community
+# langchain-text-splitters
+# sentence-transformers==2.2.2
+# pinecone-client==3.0.0
+# langchain-pinecone
+# pypdf==3.17.4
+# ctransformers==0.2.27
+# flask==3.0.0
+# python-dotenv==1.0.0
+# certifi
+# nltk==3.8.1
+# torch
+# torchvision
+# torchaudio

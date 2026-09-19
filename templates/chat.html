@@ -27,7 +27,7 @@
 									<span class="online_icon"></span>
 								</div>
 								<div class="user_info">
-									<span>Medical Chatbot</span>
+									<span>Medicaa</span>
 									<p>Ask me anything!</p>
 								</div>
 							</div>
@@ -68,7 +68,9 @@
         
         $("#text").val("");
         $("#messageFormeight").append(userHtml);
-
+        // Save conversation to localStorage
+        localStorage.setItem('chatHistory', $("#messageFormeight").html());
+        $(".msg_cotainer").hide().fadeIn(300);  // Smooth appearance
         // Send to backend
         $.ajax({
             url: "/get",
@@ -77,7 +79,7 @@
             success: function(data) {
                  var botHtml = '<div class="d-flex justify-content-start mb-4">' +
         '<div class="img_cont_msg">' +
-        '<img src="bot-image.png" class="rounded-circle user_img_msg">' +
+        '<img src="https://static.vecteezy.com/system/resources/previews/015/413/667/large_2x/doctor-round-avatar-medicine-flat-avatar-with-female-doctor-medical-clinic-team-round-icon-medical-collection-illustration-vector.jpg" class="rounded-circle user_img_msg">' +
         '</div><div class="msg_cotainer">' + data +
         '<span class="msg_time">' + str_time + '</span></div></div>';
     
@@ -95,7 +97,7 @@
             error: function(xhr, status, error) {
                 var errorHtml = '<div class="d-flex justify-content-start mb-4">' +
                     '<div class="img_cont_msg">' +
-                    '<img src="https://www.prdistribution.com/spirit/uploads/pressreleases/2019/newsreleases/d83341deb75c4c4f6b113f27b1e42cd8-chatbot-florence-already-helps-thousands-of-patients-to-remember-their-medication.png" class="rounded-circle user_img_msg">' +
+                    '<img src="https://static.vecteezy.com/system/resources/previews/015/413/667/large_2x/doctor-round-avatar-medicine-flat-avatar-with-female-doctor-medical-clinic-team-round-icon-medical-collection-illustration-vector.jpg" class="rounded-circle user_img_msg">' +
                     '</div><div class="msg_cotainer">Sorry, an error occurred. Please try again.' +
                     '<span class="msg_time">' + str_time + '</span></div></div>';
                 

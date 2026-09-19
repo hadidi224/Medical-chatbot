@@ -1,10 +1,10 @@
-from langchain.document_loaders import PyPDFLoader, DirectoryLoader
+#from langchain.document_loaders import PyPDFLoader, DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings import HuggingFaceEmbeddings
+#from langchain.embeddings import HuggingFaceEmbeddings
 import os
 import certifi
 import sentence_transformers
-
+from langchain_community.document_loaders import PyPDFLoader, DirectoryLoader
 import ssl
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
